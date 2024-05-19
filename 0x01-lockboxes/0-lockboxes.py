@@ -11,14 +11,19 @@ def canUnlockAll(boxes):
     # individual box after conditional check
     # If the key of a box is found in another box, True otherwise
     # False is returned
-    result = [True]
-    for i in range(1, len(boxes) - 1):
+    result = []
+    for i in range(0, len(boxes) - 1):
         individual_box_result = []
         for box in boxes:
-            if (i not in boxes[i]) and (i in box):
+            # Remove the key that can unlock the box holding it
+            # to aid the checking
+            if i in boxes[i]:
+                boxes[i].remove(i)
+            if (i in box):
                 individual_box_result.append(True)
             else:
                 individual_box_result.append(False)
         individual_box_result = any(individual_box_result)
-        result.append(individual_box_result)
+        # for i == 0, True is appended because boxes[0] is always unlocked
+        result.append(individual_box_result) if i != 0 else result.append(True)
     return all(result)
