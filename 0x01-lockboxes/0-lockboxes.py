@@ -16,4 +16,9 @@ def canUnlockAll(boxes):
         for key in box:
             if key != index:
                 unique_keys.add(key)
-    return True if unique_keys == all_boxes else False
+    # print(all_boxes)
+    # print(unique_keys)
+
+    # return True if elements of all_boxes are subsets of unique_keys
+    # or are in unique_keys
+    return True if all_boxes <= unique_keys else False
