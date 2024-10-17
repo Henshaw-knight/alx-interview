@@ -27,7 +27,7 @@ def minOperations(n):
 
         if (n % divisor == 0):
             result.append(divisor)
-            n = n/divisor
+            n = n//divisor
         else:
             i += 1
     return sum(result)
