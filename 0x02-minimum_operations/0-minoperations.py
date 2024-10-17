@@ -17,7 +17,7 @@ def minOperations(n):
         int: The fewest number of operations needed to reach n characters.
              Returns 0 if n is impossible to achieve.
     """
-    basic_prime_nums = [2, 3, 5, 7, 11]
+    basic_prime_nums = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
     result = []
     i = 0
     while (n != 1 and n > 0 and (type(n) == int or type(n) == float)):
