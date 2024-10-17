@@ -22,7 +22,7 @@ def minOperations(n):
     i = 0
     if n <= 1:
         return 0
-    while (n != 1 and (type(n) == int or type(n) == float)):
+    while (n > 1 and (type(n) == int or type(n) == float)):
         divisor = basic_prime_nums[i]
 
         if (n % divisor == 0):
