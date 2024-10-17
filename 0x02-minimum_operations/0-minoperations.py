@@ -20,7 +20,7 @@ def minOperations(n):
     basic_prime_nums = [2, 3, 5, 7, 11]
     result = []
     i = 0
-    while (n != 1 and n > 0 and type(n) == int):
+    while (n != 1 and n > 0 and (type(n) == int or type(n) == float)):
         divisor = basic_prime_nums[i]
 
         if (n % divisor == 0):
