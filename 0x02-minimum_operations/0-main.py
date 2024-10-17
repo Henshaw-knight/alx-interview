@@ -25,6 +25,3 @@ print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
 
 n = -1
 print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
-
-n = True
-print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))

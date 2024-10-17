@@ -17,17 +17,14 @@ def minOperations(n):
         int: The fewest number of operations needed to reach n characters.
              Returns 0 if n is impossible to achieve.
     """
-    basic_prime_nums = [2, 3, 5, 7, 11]
     result = []
-    i = 0
+    divisor = 2
     if n <= 1:
         return 0
-    while (n > 1 and (type(n) == int or type(n) == float)):
-        divisor = basic_prime_nums[i]
-
-        if (n % divisor == 0):
+    while (n > 1):
+        while (n % divisor == 0):
             result.append(divisor)
-            n = n//divisor
-        else:
-            i += 1
+            n = n // divisor
+        divisor += 1
+
     return sum(result)
