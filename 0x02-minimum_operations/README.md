@@ -41,4 +41,5 @@ print(minOperations(1))   # Output: 0
 ### Detailed Example
 
 For n = 9, the operations would be:
+```python
 H => Copy All => Paste => HH => Paste => HHH => Copy All => Paste => HHHHHH => Paste => HHHHHHHHH
