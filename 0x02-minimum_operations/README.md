@@ -28,6 +28,7 @@ def minOperations(n):
     int: The fewest number of operations needed to reach n characters. 
          Returns 0 if n is impossible to achieve.
     """
+```
 
 ### Example usage
 
@@ -35,9 +36,9 @@ def minOperations(n):
 print(minOperations(9))   # Output: 6
 print(minOperations(15))  # Output: 8
 print(minOperations(1))   # Output: 0
+```
 
 ### Detailed Example
 
 For n = 9, the operations would be:
 H => Copy All => Paste => HH => Paste => HHH => Copy All => Paste => HHHHHH => Paste => HHHHHHHHH
-
